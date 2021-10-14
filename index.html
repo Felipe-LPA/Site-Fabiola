@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Family Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@800&display=swap"
       rel="stylesheet"
     />
+    <!-- Reset -->
     <link rel="stylesheet" href="/assets/css/reset.css" />
+    <!-- Bootstrat -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <!-- Google Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Main Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <main>
-        <section id="topo">
+    <main>
+      <div class="backgroundColor">
+        <section id="topo" class="container">
           <header>
             <div id="logo">
               <a href="#">
@@ -36,8 +46,8 @@
             </div>
             <nav>
               <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
               </ul>
             </nav>
           </header>
@@ -71,14 +81,26 @@
                 ></button>
               </div>
               <div class="carousel-inner slideshow-inner">
-                <div class="carousel-item active slide-img">
-                  <img src="/assets/img/bug3.png" class="d-block w-100 h-100" alt="..." />
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/img/bug3.png"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
                 </div>
-                <div class="carousel-item slide-img">
-                  <img src="/assets/img/img2.png" class="d-block w-100 h-100" alt="..." />
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img/img.png"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
                 </div>
-                <div class="carousel-item slide-img">
-                  <img src="/assets/img/img3.png" class="d-block w-100 h-100" alt="..." />
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img/img3.png"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
                 </div>
               </div>
               <button
@@ -108,36 +130,95 @@
             </div>
           </div>
         </section>
-        <section>
+      </div>
+      <div class="backgroundColorinvert">
+        <section id="about" class="container">
           <h2>Sobre mim</h2>
-          <p>Texto</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+            incidunt unde excepturi et! Et sunt temporibus, commodi doloribus
+            similique reiciendis quaerat repellat dolore veritatis fuga. Alias
+            dolores aperiam commodi rerum. Vero ducimus et perspiciatis,
+            reprehenderit error repellendus. Quasi aliquam laborum possimus
+            natus eius itaque asperiores inventore illo nostrum aspernatur
+            doloremque odio aliquid dolor, sunt corrupti aut ipsam doloribus qui
+            neque! Molestiae voluptatum qui rerum, fugit nobis corrupti ab,
+            minima labore delectus amet veritatis possimus aliquam, aperiam
+            debitis quos sapiente non officiis. Cumque dolorem debitis incidunt
+            officia fugiat? Repudiandae, nostrum odit. Tenetur alias sapiente ad
+            doloremque est quod porro suscipit cum odio similique nisi,
+            veritatis dolor! Error quod, molestiae, expedita libero officiis
+            enim, commodi non laboriosam cum ratione architecto autem eius.
+            Esse, qui assumenda. Qui quidem ratione harum voluptatem, mollitia
+            omnis? Debitis est porro tempora atque ducimus consequuntur
+            laboriosam id, ipsum nihil soluta consequatur veniam voluptas rem
+            quaerat? Tempora, voluptatibus reprehenderit. Debitis, odit fugit
+            expedita, molestias eaque cupiditate tempore nisi praesentium amet
+            iste perferendis cum. Labore pariatur perferendis consequuntur
+            impedit fuga magni ex. Voluptas, perferendis perspiciatis iure odit
+            placeat quaerat officia? Tempora saepe magni blanditiis illum dolor
+            error, rerum autem deserunt alias, tempore consectetur. Ipsam saepe
+            perspiciatis culpa id incidunt expedita, delectus atque quia unde,
+            soluta natus quisquam rerum beatae deleniti! Totam accusantium
+            pariatur beatae necessitatibus esse quisquam odit similique autem,
+            nostrum laborum harum sed aliquam et tempora a officia ducimus
+            expedita. Dolor mollitia alias voluptates ut quas. Excepturi, omnis
+            quasi. Nulla ab incidunt eum autem atque dolor quia aliquam sit,
+            tempora hic veniam amet culpa molestias dolorum ullam officiis?
+            Fugiat totam sint itaque architecto ea debitis dolorum fuga
+            voluptatum doloremque! Reiciendis, repudiandae exercitationem!
+            Molestiae aspernatur consequuntur accusantium optio ipsa dolores
+            esse suscipit corporis necessitatibus doloribus eveniet nisi, facere
+            qui debitis rem veritatis repudiandae officiis quidem magni nihil
+            inventore explicabo illum.
+          </p>
         </section>
-        <section>
+      </div>
+      <div class="backgroundColor">
+        <section id="contact" class="container">
           <h2>Contato</h2>
           <form>
-            <label for="email">Email: </label>
-            <input type="email" id="email" />
-            <label for="whatsapp">(opcional) Whatsapp: </label>
-            <input type="tel" id="whatsapp" />
-            <label for="assunto">Assunto: </label>
-            <input type="text" id="assunto" />
-            <label for="descricao">Descrição</label>
-            <textarea></textarea>
+            <label class="form-label" for="email">Email: </label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              placeholder="name@example.com"
+            />
+            <label class="form-label" for="whatsapp"
+              >(opcional) Whatsapp:
+            </label>
+            <input
+              class="form-control"
+              type="tel"
+              id="whatsapp"
+              placeholder="(99) 99999-9999"
+            />
+            <label class="form-label" for="assunto">Assunto: </label>
+            <input class="form-control" type="text" id="assunto" />
+            <label class="form-label" for="descricao">Descrição</label>
+            <textarea class="form-control" id="descricao"></textarea>
           </form>
         </section>
-      </main>
-      <aside>
-        <nav>
-          <ul>
-            <li>Blog</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
-          </ul>
-        </nav>
-      </aside>
+      </div>
+    </main>
+    <aside>
+      <nav>
+        <ul>
+          <li>Blog</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="position-fixed bottom-0 end-0" id="returnButtom">
+      <a href="#topo">
+        <button type="button" class="btn btn-dark">
+          <img src="/assets/img/ButtonToTheTop.svg" alt="Botão para o topo" />
+        </button>
+      </a>
     </div>
-    <div>Botao topo</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
