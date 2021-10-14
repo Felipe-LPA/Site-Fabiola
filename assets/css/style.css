@@ -15,23 +15,9 @@ body {
 .backgroundColorinvert {
   min-height: 100vh;
   color: rgb(9, 9, 121);
-  color: linear-gradient(
-    0deg,
-    rgba(0, 212, 255, 1) 0%,
-    rgba(9, 9, 121, 1) 100%
-  );
+
 }
-.backgroundColorinvert h2,
-.backgroundColorinvert p {
-  background: rgb(9, 9, 121);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 212, 255, 1) 0%,
-    rgba(9, 9, 121, 1) 100%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .backgroundColor {
   min-height: 100vh;
   background: rgb(9, 9, 121);
