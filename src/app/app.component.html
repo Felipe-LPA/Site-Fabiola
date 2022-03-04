@@ -1,0 +1,15 @@
+<header [ngClass]="isMenuHidden ? 'hidden' : 'show'">
+  <nav>
+    <ul >
+      <li><a href="#">A Advogada</a></li>
+      <li><a href="#">Areas de Atuação</a></li>
+      <li><a href="#">Artigos</a></li>
+      <li><a href="#">Agendamento de Consulta</a></li>
+      <li><a href="#">Me Acompanhe</a></li>
+    </ul>
+    <div [ngClass]="isMenuHidden ? 'menuHidden' : 'menusShowing'" class="icon" (click)="changeMenuHiddenStatus()">
+      <mat-icon *ngIf="isMenuHidden" aria-hidden="false" aria-label="expand menu">keyboard_arrow_right</mat-icon>
+      <mat-icon *ngIf="!isMenuHidden" aria-hidden="false" aria-label="hide menu">keyboard_arrow_left</mat-icon>
+    </div>
+  </nav>
+</header>

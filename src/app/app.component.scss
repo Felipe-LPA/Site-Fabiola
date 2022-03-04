@@ -1,0 +1,59 @@
+@import "/src/variables.scss";
+
+header {
+  position: fixed;
+  width: 60vw;
+  top: 0;
+//   transition: ;
+  nav {
+    position: relative;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      background-color: $primary-color;
+      padding: 2vw;
+      font-size: 1.3rem;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    ul.hidden {
+      transform: translateX(-60vw);
+    }
+
+    // li{
+    //     width: 100%;
+    // }
+
+    div.icon {
+      position: absolute;
+      bottom: calc(50% - 0.85rem);
+      left: calc(100% - 0.85rem);
+      background-color: $dark-gray-color;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.7rem;
+      height: 1.7rem;
+      transition: transform ease-in-out 0.5s ;
+      mat-icon {
+        font-size: 1.5rem;
+      }
+    }
+    div.icon.menuHidden{
+        transform: translateX(0.85rem);
+        transition: transform ease-in-out 0.5s ;
+    }
+  }
+}
+header.show {
+  left: 0;
+  transition: transform ease-in-out 0.5s ;
+}
+header.hidden {
+  transform: translate(-60vw);
+  transition: transform ease-in-out 0.5s ;
+}
