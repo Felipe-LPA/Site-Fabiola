@@ -1,0 +1,27 @@
+a{
+    cursor: pointer;
+    div.banner{
+        width: 100%;
+    }
+    section.action-field{
+        display: flex;
+        width: 100%;
+        font-size: 3rem;
+        align-items: center;
+        margin-top: 2vh;
+        h1{
+            width: 50%;
+            font-size: 3rem;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            list-style: disc;
+            li{
+                // height: max-content;
+                line-height: 3rem;
+            }
+        }
+    }
+}
