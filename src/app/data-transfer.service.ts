@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataTransferService {
+  bannerHome = '';
 
-  bannerHome = "banner-home-vertical"
-
-  constructor() { }
+  constructor() {}
 }

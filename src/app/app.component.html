@@ -1,18 +1,37 @@
 <header [ngClass]="isMenuHidden ? 'hidden' : 'show'">
   <nav>
     <div (click)="changeMenuHiddenStatus()" routerLink="/" class="imgbox">
-      <img src="/../../assets/{{logo}}.png" alt="Logo"> 
+      <img src="/../../assets/{{ logo }}.png" alt="Logo" />
     </div>
     <ul>
-      <li><a (click)="changeMenuHiddenStatus()" routerLink="/A-Advogada">A Advogada</a></li>
-      <li><a (click)="changeMenuHiddenStatus()" routerLink="/Area-de-atuacao">Areas de Atuação</a></li>
+      <li>
+        <a (click)="changeMenuHiddenStatus()" routerLink="/A-Advogada"
+          >A Advogada</a
+        >
+      </li>
+      <li>
+        <a (click)="changeMenuHiddenStatus()" routerLink="/Area-de-atuacao"
+          >Areas de Atuação</a
+        >
+      </li>
       <li><a href="#">Artigos</a></li>
       <li><a href="#">Agendamento de Consulta</a></li>
       <li><a href="#">Me Acompanhe</a></li>
     </ul>
-    <div [ngClass]="isMenuHidden ? 'menuHidden' : 'menusShowing'" class="icon" (click)="changeMenuHiddenStatus()">
-      <mat-icon *ngIf="isMenuHidden" aria-hidden="false" aria-label="expand menu">keyboard_arrow_right</mat-icon>
-      <mat-icon *ngIf="!isMenuHidden" aria-hidden="false" aria-label="hide menu">keyboard_arrow_left</mat-icon>
+    <div
+      [ngClass]="isMenuHidden ? 'menuHidden' : 'menusShowing'"
+      class="icon"
+      (click)="changeMenuHiddenStatus()"
+    >
+      <mat-icon
+        *ngIf="isMenuHidden"
+        aria-hidden="false"
+        aria-label="expand menu"
+        >keyboard_arrow_right</mat-icon
+      >
+      <mat-icon *ngIf="!isMenuHidden" aria-hidden="false" aria-label="hide menu"
+        >keyboard_arrow_left</mat-icon
+      >
     </div>
   </nav>
 </header>
@@ -23,6 +42,5 @@
 </section>
 
 <footer>
-    <div class="bottom">&#169; 2022 Copyright: Fabiola Marine Advocacia</div>
+  <div class="bottom">&#169; 2022 Copyright: Fabiola Marine Advocacia</div>
 </footer>
-
