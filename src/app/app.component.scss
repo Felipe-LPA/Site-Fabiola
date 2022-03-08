@@ -25,6 +25,7 @@ header {
     div.imgbox {
       border-top-right-radius: 0.5rem;
       cursor: pointer;
+      min-width: 77.2333px;
       @media screen {
         @media (min-width: 420px) {
           height: auto;
@@ -141,11 +142,16 @@ header.hidden {
 section.principal {
   width: 100vw;
   display: flex;
-  padding: 0 5vw;
   box-sizing: border-box;
   justify-content: center;
-  div.container{
-    width: 90vw;
+  @media (min-width: 420px) {
+    padding: 0 5vw;
+  }
+  div.container {
+    width: 100%;
+    @media (min-width: 420px) {
+      width: 90vw;
+    }
   }
 }
 

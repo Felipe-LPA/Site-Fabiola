@@ -1,7 +1,7 @@
 <header [ngClass]="isMenuHidden ? 'hidden' : 'show'">
   <nav>
     <div (click)="changeMenuHiddenStatus()" routerLink="/" class="imgbox">
-      <img src="/../../assets/logo.png" alt="Logo"> 
+      <img src="/../../assets/{{logo}}.png" alt="Logo"> 
     </div>
     <ul>
       <li><a (click)="changeMenuHiddenStatus()" routerLink="/A-Advogada">A Advogada</a></li>
@@ -23,8 +23,6 @@
 </section>
 
 <footer>
-    
     <div class="bottom">&#169; 2022 Copyright: Fabiola Marine Advocacia</div>
-  
 </footer>
 
