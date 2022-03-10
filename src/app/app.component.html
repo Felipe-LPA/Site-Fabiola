@@ -1,5 +1,5 @@
 <header [ngClass]="isMenuHidden ? 'hidden' : 'show'">
-  <nav>
+  <nav #menu>
     <div (click)="changeMenuHiddenStatus()" routerLink="/" class="imgbox">
       <img src="/../../assets/{{ logo }}.png" alt="Logo" />
     </div>
@@ -14,9 +14,19 @@
           >Areas de Atuação</a
         >
       </li>
-      <li><a href="#">Artigos</a></li>
-      <li><a href="#">Agendamento de Consulta</a></li>
-      <li><a href="#">Me Acompanhe</a></li>
+      <li>
+        <a (click)="changeMenuHiddenStatus()" routerLink="/Artigos">Artigos</a>
+      </li>
+      <li>
+        <a (click)="changeMenuHiddenStatus()" routerLink="/Contato"
+          >Agendamento de Consulta</a
+        >
+      </li>
+      <li>
+        <a (click)="changeMenuHiddenStatus()" routerLink="/Redes-Sociais"
+          >Me Acompanhe</a
+        >
+      </li>
     </ul>
     <div
       [ngClass]="isMenuHidden ? 'menuHidden' : 'menusShowing'"
@@ -35,12 +45,12 @@
     </div>
   </nav>
 </header>
-<section class="principal">
+<section class="principal" (click)="closeMenu()">
   <div class="container">
     <router-outlet></router-outlet>
   </div>
 </section>
 
-<footer>
-  <div class="bottom">&#169; 2022 Copyright: Fabiola Marine Advocacia</div>
+<footer (click)="closeMenu()">
+  <div  class="bottom">&#169; 2022 Copyright: Fabiola Marine Advocacia</div>
 </footer>

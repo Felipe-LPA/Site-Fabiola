@@ -1,4 +1,7 @@
 @import "/src/variables.scss";
+body{
+  display: flex;
+}
 
 header {
   position: fixed;
@@ -144,6 +147,7 @@ section.principal {
   display: flex;
   box-sizing: border-box;
   justify-content: center;
+  flex-grow: 1;
   @media (min-width: 420px) {
     padding: 0 5vw;
   }
@@ -159,7 +163,7 @@ footer {
   .bottom {
     width: 100vw;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
   }
 }

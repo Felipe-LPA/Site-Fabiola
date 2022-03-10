@@ -1,5 +1,5 @@
 import { DataTransferService } from './data-transfer.service';
-import { Component, HostListener, OnInit, Output } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +18,12 @@ export class AppComponent implements OnInit {
   public screenWidth: Number = 0;
   public screenHeight: Number = 0;
 
+
   changeMenuHiddenStatus() {
     this.isMenuHidden = !this.isMenuHidden;
+  }
+  closeMenu(){
+    this.isMenuHidden = true;
   }
 
   ngOnInit() {
@@ -44,4 +48,5 @@ export class AppComponent implements OnInit {
       this.dataTransferService.bannerHome = 'banner-home-vertical';
     }
   }
+
 }
