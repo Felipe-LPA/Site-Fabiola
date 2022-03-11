@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   title = 'site-fabiola';
 
-  isMenuHidden = false;
+  isMenuHidden = true;
 
   logo = '';
 

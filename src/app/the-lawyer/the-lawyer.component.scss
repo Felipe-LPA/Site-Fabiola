@@ -1,0 +1,40 @@
+.container{
+    h1{
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .content{
+        
+        p{
+            padding: 2vw;
+        }
+    }
+}
+
+.container{
+    @media screen {
+        @media (min-width: 420px) {
+            h1{
+                font-size: 2rem;
+                
+            }
+            .content{
+                // display: flex;
+                // gap: 2vw;
+                font-size: 1.5rem;
+                line-height:2rem;
+                
+                .imgbox{
+                    width: 50vw;
+                    height: fit-content;
+                    // flex-shrink: 0;
+                    float: left;
+                    margin: 0 1vw 1vw 0;
+                }
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
