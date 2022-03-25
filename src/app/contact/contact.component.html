@@ -1,28 +1,69 @@
 <section>
   <h2>Contato</h2>
   <div>
-    <form action="#">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" formControlName="name" />
+      </div>
       <div>
         <label for="subject">Assunto</label>
-        <input type="text" id="subject" />
+        <input type="text" id="subject" formControlName="subject" />
       </div>
-      <div>
-        <label for="email">email</label>
-        <input type="email" name="email" id="email" />
+      <div id="opt">
+        <div>
+          <input
+            type="radio"
+            id="optEmail"
+            name="optEmailPhone"
+            value="optEmail"
+            formControlName="optEmailPhone"
+            (click)="optEmailPhone = 'optEmail'"
+          />
+          <label for="optEmail">Email</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="optPhone"
+            name="optEmailPhone"
+            value="optPhone"
+            formControlName="optEmailPhone"
+            (click)="optEmailPhone = 'optPhone'"
+          />
+          <label for="optPhone">Telefone</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="optEmailPhone"
+            name="optEmailPhone"
+            value="optEmailPhone"
+            formControlName="optEmailPhone"
+            (click)="optEmailPhone = 'optEmailPhone'"
+          />
+          <label for="optEmailPhone">Email e Telefone</label>
+        </div>
       </div>
-      <div>
-        <label for="phone">Telefone(opcional)</label>
-        <input type="text" id="phone" />
+      <div *ngIf="optEmailPhone == 'optEmailPhone' || optEmailPhone == 'optEmail' ">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" formControlName="email" />
+      </div>
+      <div *ngIf="optEmailPhone == 'optEmailPhone' || optEmailPhone == 'optPhone' ">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" formControlName="phone" />
       </div>
       <div>
         <label for="Description">Descrição</label>
-        <textarea id="Description"></textarea>
+        <textarea id="Description" formControlName="description"></textarea>
       </div>
       <button type="submit">Enviar</button>
     </form>
   </div>
 
-  <a href="#">
+  <a
+    href="https://api.whatsapp.com/send?phone=5511942240187&text=Ol%C3%A1%20Boa%20Tarde!"
+  >
     <div id="whatsapp">
       <img src="../../assets/whatsapp.png" alt="" />
     </div>

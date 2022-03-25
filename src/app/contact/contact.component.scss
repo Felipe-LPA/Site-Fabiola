@@ -2,13 +2,13 @@
 
 section{
     width: auto;
-    min-height: 100vh;
+    // min-height: 60vh;
     align-items: center;
     flex-direction: column;
     display: flex;
     position: relative;
     z-index: 1;
-    div{
+    >div{
         display: flex;
         width: 100%;
        form{
@@ -17,12 +17,25 @@ section{
            display: flex;
            flex-direction: column;
            gap: 6vh;
-           div{
+           >div:not(div#opt){
                display: flex;
                flex-direction: column;
                :is(input, input:text, input:email, textarea){
                    width: 100%;
                    box-sizing: border-box;
+                }
+            }
+            div#opt{
+                display: flex;
+                justify-content: space-around;
+                div{
+                    align-items: center;
+                    display: flex;
+                    gap: 1rem;
+                    :is(input, label){
+                        cursor: pointer;
+                        width: fit-content;
+                    }
                 }
             }
             button{
@@ -35,9 +48,9 @@ section{
     }
     div#whatsapp{
         position: fixed;
-        width: 10vw;
+        width: 10vh;
         height: auto;
-        right: 0;
-        bottom: 0;
+        right: 2vw;
+        bottom: 10vh;
     }
 }
