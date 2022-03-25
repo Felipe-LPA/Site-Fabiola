@@ -1,0 +1,43 @@
+@import "/src/variables.scss";
+
+section{
+    width: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    div{
+        display: flex;
+        width: 100%;
+       form{
+           width: 100%;
+           flex-grow: 1;
+           display: flex;
+           flex-direction: column;
+           gap: 6vh;
+           div{
+               display: flex;
+               flex-direction: column;
+               :is(input, input:text, input:email, textarea){
+                   width: 100%;
+                   box-sizing: border-box;
+                }
+            }
+            button{
+                background-color: $primary-color;
+                border-color: white;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+    div#whatsapp{
+        position: fixed;
+        width: 10vw;
+        height: auto;
+        right: 0;
+        bottom: 0;
+    }
+}

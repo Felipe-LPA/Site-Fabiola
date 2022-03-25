@@ -19,3 +19,16 @@ app-root{
   flex-direction: column;
   min-height: 100vh;
 }
+body::-webkit-scrollbar {
+  width: 2px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;    
+  border-radius: 20px;       
+  border: 3px solid orange; 
+}

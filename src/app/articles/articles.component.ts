@@ -1,3 +1,4 @@
+import { Post } from './post';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +9,24 @@ import { Component, OnInit } from '@angular/core';
 export class ArticlesComponent implements OnInit {
 
   constructor() { }
+
+  posts:Post[] = [
+    {
+      title: "Title 1",
+      banner: "../../assets/bannerPost1.jpg",
+      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+    },
+    {
+      title: "Title 2",
+      banner: "../../assets/bannerPost2.jpg",
+      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+    },
+    {
+      title: "Title 3",
+      banner: "../../assets/bannerPost3.jpg",
+      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+    }
+  ]
 
   ngOnInit(): void {
   }

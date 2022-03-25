@@ -8,6 +8,7 @@ header {
   width: 60vw;
   top: 0;
   left: 0;
+  z-index: 10;
   @media screen {
     @media (min-width: 440px) {
       width: 100vw;
@@ -19,7 +20,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-
+    
     @media screen {
       @media (min-width: 440px) {
         flex-direction: row;
@@ -109,6 +110,7 @@ header {
       width: 1.7rem;
       height: 1.7rem;
       transition: transform ease-in-out 0.5s;
+      z-index: 10;
       @media screen {
         @media (min-width: 440px) {
           display: none;
@@ -148,14 +150,16 @@ section.principal {
   box-sizing: border-box;
   justify-content: center;
   flex-grow: 1;
-  margin: 5vh 0;
   @media (min-width: 440px) {
+    margin: 5vh 0;
     padding: 0 5vw;
+    justify-content: space-around;
   }
   div.container {
     width: 100%;
     @media (min-width: 440px) {
       width: 90vw;
+      
     }
   }
 }

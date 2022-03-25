@@ -1,0 +1,23 @@
+section {
+  ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      width: 100%;
+      flex-shrink: 0;
+      @media screen {
+        @media (min-width: 520px) {
+            width: 45%;
+        }
+        @media (min-width: 1220px) {
+            width: 30%;
+        }
+      }
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
