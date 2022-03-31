@@ -1,56 +1,62 @@
 @import "/src/variables.scss";
 
-section{
-    width: auto;
-    // min-height: 60vh;
-    align-items: center;
-    flex-direction: column;
+section {
+  width: auto;
+  // min-height: 60vh;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  > div {
     display: flex;
-    position: relative;
-    z-index: 1;
-    >div{
+    width: 100%;
+    form {
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6vh;
+      > div:not(div#opt) {
         display: flex;
-        width: 100%;
-       form{
-           width: 100%;
-           flex-grow: 1;
-           display: flex;
-           flex-direction: column;
-           gap: 6vh;
-           >div:not(div#opt){
-               display: flex;
-               flex-direction: column;
-               :is(input, input:text, input:email, textarea){
-                   width: 100%;
-                   box-sizing: border-box;
-                }
-            }
-            div#opt{
-                display: flex;
-                justify-content: space-around;
-                div{
-                    align-items: center;
-                    display: flex;
-                    gap: 1rem;
-                    :is(input, label){
-                        cursor: pointer;
-                        width: fit-content;
-                    }
-                }
-            }
-            button{
-                background-color: $primary-color;
-                border-color: white;
-                color: white;
-                font-weight: 700;
-            }
+        flex-direction: column;
+        :is(input, input:text, input:email, textarea) {
+          width: 100%;
+          box-sizing: border-box;
         }
+        label.red {
+          color: red;
+        }
+        input.ng-invalid.ng-touched {
+          color: rgb(255, 0, 0);
+        }
+      }
+      div#opt {
+        display: flex;
+        justify-content: space-around;
+        div {
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+          :is(input, label) {
+            cursor: pointer;
+            width: fit-content;
+          }
+        }
+      }
+      button {
+        background-color: $primary-color;
+        border-color: white;
+        color: white;
+        font-weight: 700;
+      }
     }
-    div#whatsapp{
-        position: fixed;
-        width: 10vh;
-        height: auto;
-        right: 2vw;
-        bottom: 10vh;
-    }
+  }
+  div#whatsapp {
+    position: fixed;
+    width: 10vh;
+    height: auto;
+    right: 2vw;
+    bottom: 10vh;
+  }
 }
