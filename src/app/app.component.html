@@ -28,6 +28,7 @@
         >
       </li>
     </ul>
+    <!-- botão abrir/fechar menu (mobile) -->
     <div
       [ngClass]="isMenuHidden ? 'menuHidden' : 'menusShowing'"
       class="icon"
@@ -43,7 +44,11 @@
         >keyboard_arrow_left</mat-icon
       >
     </div>
+    <!-- Sombreamento do menu -->
   </nav>
+  <div [ngClass]="isMenuHidden ? '' : 'shadow-menu-open'" (click)="closeMenu()">
+    
+  </div>
 </header>
 <section class="principal" (click)="closeMenu()">
   <div class="container">

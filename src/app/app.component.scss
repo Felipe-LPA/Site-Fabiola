@@ -1,5 +1,5 @@
 @import "/src/variables.scss";
-body{
+body {
   display: flex;
 }
 
@@ -15,12 +15,12 @@ header {
       position: relative;
     }
   }
-  //   transition: ;
   nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    
+    z-index: 2;
+
     @media screen {
       @media (min-width: 440px) {
         flex-direction: row;
@@ -77,7 +77,7 @@ header {
           }
         }
         @media (min-width: 520px) {
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
         @media (min-width: 768px) {
           font-size: 1.4rem;
@@ -93,9 +93,6 @@ header {
       }
     }
 
-    // li{
-    //     width: 100%;
-    // }
 
     div.icon {
       position: absolute;
@@ -130,19 +127,31 @@ header {
       }
     }
   }
-}
-header.show {
-  transition: transform ease-in-out 0.5s;
-}
-header.hidden {
-  transform: translate(-60vw);
-  transition: transform ease-in-out 0.5s;
-  @media screen {
-    @media (min-width: 440px) {
-      transform: none;
+  
+  // sombreamento do menu
+  div.shadow-menu-open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200vw;
+      height: 100vh;
+      opacity: 0.3;
+      background-color: black;
+      transition: background-color 0.5s linear;
     }
   }
-}
+  header.show {
+    transition: transform ease-in-out 0.5s;
+  }
+  header.hidden {
+    transform: translate(-60vw);
+    transition: transform ease-in-out 0.5s;
+    @media screen {
+      @media (min-width: 440px) {
+        transform: none;
+      }
+    }
+  }
 
 section.principal {
   width: 100vw;
@@ -160,7 +169,6 @@ section.principal {
 
     @media (min-width: 440px) {
       width: 90vw;
-      
     }
   }
 }
