@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeModule } from './home/home.module';
@@ -26,7 +27,8 @@ import { SocialMediaModule } from './social-media/social-media.module';
     FieldActionModule,
     TheLawyerModule,
     ContactModule,
-    SocialMediaModule
+    SocialMediaModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

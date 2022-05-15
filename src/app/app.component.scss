@@ -75,6 +75,18 @@ header {
             }
             opacity: 0.5;
           }
+          li.disabled{
+            opacity: 0.5;
+            cursor: not-allowed;
+            a:hover{
+                text-decoration: none;
+            }
+          }
+          li:hover.disabled{
+            a{
+              text-decoration: none;
+            }
+          }
         }
         @media (min-width: 520px) {
           font-size: 0.9rem;

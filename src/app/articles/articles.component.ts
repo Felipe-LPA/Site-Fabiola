@@ -1,3 +1,4 @@
+import { ArticlesService } from './articles.service';
 import { Post } from './post';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private articlesService:ArticlesService ) { }
 
   posts:Post[] = [
     {
@@ -29,6 +30,7 @@ export class ArticlesComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    // this.articlesService.getBlogPosts().subscribe(blogs => console.log(blogs))
   }
 
 }
