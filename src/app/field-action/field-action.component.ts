@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FieldActionComponent implements OnInit {
   constructor() {}
 
-  civel = ['algo1', 'algo2', 'algo3', 'algo4'];
-  familia = ['algo1', 'algo2', 'algo3', 'algo4'];
-  sucessoes = ['algo1', 'algo2', 'algo3', 'algo4'];
-  digital = ['algo1', 'algo2', 'algo3', 'algo4'];
+  civel = ['Direitos Individuais', 'Direitos Coletivos', 'Contratos', 'Consumidor'];
+  familia = ['Divórcio', 'União Estável', 'Pensão Alimentícia', 'Partilha de Bens'];
+  sucessoes = ['Inventários e Arrolamentos', 'Planejamento Sucessório', 'Doação de Bens', 'Testamento'];
+  digital = ['Herança Digital', 'Direitos Relativos a Redes Sociais', 'Proteção de Dados', 'Direitos Autorais de Bens Digitais'];
 
   ngOnInit(): void {}
 }
