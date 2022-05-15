@@ -43,6 +43,7 @@ export class AppComponent implements OnInit {
     if (this.screenWidth >= 420) {
       this.logo = 'logo';
       this.dataTransferService.bannerHome = 'banner-home-horizontal';
+      this.isMenuHidden = true;
     } else {
       this.logo = 'logo1';
       this.dataTransferService.bannerHome = 'banner-home-vertical';
